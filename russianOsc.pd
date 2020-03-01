@@ -1,8 +1,8 @@
-#N canvas 0 0 1904 996 10;
+#N canvas 399 97 1888 980 10;
 #X obj 131 85 phasor~;
 #X obj 229 179 triangle~;
 #X obj 225 236 <~ 0.5, f 23;
-#N canvas 345 393 829 564 drywet 1;
+#N canvas 345 393 829 564 drywet 0;
 #X obj 149 292 *~;
 #X obj 274 307 *~;
 #X obj 257 119 inlet~;
@@ -48,6 +48,7 @@
 #X msg 260 477 \$1 50;
 #X obj 243 502 line~;
 #X obj 24 612 outlet~;
+#X floatatom 135 52 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 0 3 1;
@@ -56,6 +57,7 @@
 #X connect 4 0 23 0;
 #X connect 5 0 3 0;
 #X connect 6 0 0 0;
+#X connect 6 0 24 0;
 #X connect 7 0 1 1;
 #X connect 8 0 4 1;
 #X connect 9 0 8 0;
