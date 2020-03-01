@@ -1,63 +1,88 @@
-#N canvas -8 -8 1904 996 10;
-#X obj 25 67 vsl 15 128 0 1 0 0 empty empty sharp -7 -9 0 10 -262144
+#N canvas -8 -8 2544 1356 10;
+#X obj 28 100 vsl 15 128 0 1 0 0 empty empty sharp -7 -9 0 10 -262144
+-1 -1 3400 1;
+#X floatatom 28 255 5 0 0 0 - - -, f 5;
+#X obj 84 100 vsl 15 128 0 250 0 0 empty empty am 0 -9 0 10 -262144
+-1 -1 2800 1;
+#X floatatom 84 255 5 0 0 0 - - -, f 5;
+#X obj 135 100 vsl 15 128 0 1 0 0 empty empty am\ trem -12 -9 0 10
+-262144 -1 -1 0 1;
+#X floatatom 135 255 5 0 0 0 - - -, f 5;
+#X obj 187 100 vsl 15 128 0.5 1 0 0 empty empty duty -4 -9 0 10 -262144
+-1 -1 8000 1;
+#X floatatom 187 255 5 0 0 0 - - -, f 5;
+#X obj 238 100 vsl 15 128 0 0.99 0 0 empty empty pw 0 -9 0 10 -262144
 -1 -1 0 1;
-#X floatatom 25 222 5 0 0 0 - - -, f 5;
-#X obj 81 67 vsl 15 128 0 250 0 0 empty empty am 0 -9 0 10 -262144
--1 -1 0 1;
-#X floatatom 81 222 5 0 0 0 - - -, f 5;
-#X obj 132 67 vsl 15 128 0 1 0 0 empty empty am\ trem -12 -9 0 10 -262144
--1 -1 0 1;
-#X floatatom 132 222 5 0 0 0 - - -, f 5;
-#X obj 184 67 vsl 15 128 0.5 1 0 0 empty empty duty -4 -9 0 10 -262144
--1 -1 0 1;
-#X floatatom 184 222 5 0 0 0 - - -, f 5;
-#X obj 235 67 vsl 15 128 0 0.99 0 0 empty empty pw 0 -9 0 10 -262144
--1 -1 0 1;
-#X floatatom 235 222 5 0 0 0 - - -, f 5;
-#X obj 25 682 dac~;
-#X obj 81 638 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X floatatom 238 255 5 0 0 0 - - -, f 5;
+#X obj 28 750 dac~;
+#X obj 84 706 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array osc 100 float 0 black #000000;
 #X coords 0 1 99 -1 250 150 1;
-#X restore 378 22 graph;
-#X obj 81 662 metro 100;
-#X obj 57 682 tabwrite~ osc;
-#X obj 25 437 russianVoice;
-#X obj 273 35 vsl 15 128 0 1000 0 0 a empty a 0 -9 0 10 -262144 -1
+#X restore 381 55 graph;
+#X obj 84 730 metro 100;
+#X obj 60 750 tabwrite~ osc;
+#X obj 28 470 russianVoice;
+#X obj 276 68 vsl 15 128 0 1000 0 0 a empty a 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 295 35 vsl 15 128 0 1000 0 0 d empty d 0 -9 0 10 -262144 -1
+#X obj 298 68 vsl 15 128 0 1000 0 0 d empty d 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 340 35 vsl 15 128 0 1000 0 0 r empty r 0 -9 0 10 -262144 -1
--1 13 1;
-#X obj 318 35 vsl 15 128 0 1 0 0 s empty s 0 -9 0 10 -262144 -1 -1
+#X obj 343 68 vsl 15 128 0 1000 0 0 r empty r 0 -9 0 10 -262144 -1
+-1 12700 1;
+#X obj 321 68 vsl 15 128 0 1 0 0 s empty s 0 -9 0 10 -262144 -1 -1
 12700 1;
-#X obj 25 297 notein;
-#X obj 25 254 s sharp;
-#X obj 81 254 s am;
-#X obj 132 254 s trem;
-#X obj 184 254 s duty;
-#X obj 235 254 s pw;
-#X obj 105 437 russianVoice;
-#X obj 186 437 russianVoice;
-#X obj 266 437 russianVoice;
-#X obj 347 437 russianVoice;
-#X obj 428 437 russianVoice;
-#X obj 508 437 russianVoice;
-#X obj 589 437 russianVoice;
-#X obj 318 -25 loadbang;
-#X msg 318 -5 1;
-#X msg 132 -3 0;
-#X obj 25 564 *~;
-#X obj 25 353 pack f f f;
-#X obj 25 393 route 1 2 3 4 5 6 7 8, f 108;
-#X obj 25 327 poly 8 1, f 10;
-#X obj 81 566 hsl 128 15 0 1 0 0 empty empty Volume -2 -11 0 10 -262144
--1 -1 0 1;
-#X obj 25 594 pg_chorus;
-#X obj 285 223 hsl 37 15 0 1 0 0 empty empty chorus -2 -11 0 10 -262144
--1 -1 0 1;
-#X obj 285 254 s cdw;
+#X obj 28 330 notein;
+#X obj 28 287 s sharp;
+#X obj 84 287 s am;
+#X obj 135 287 s trem;
+#X obj 187 287 s duty;
+#X obj 238 287 s pw;
+#X obj 108 470 russianVoice;
+#X obj 189 470 russianVoice;
+#X obj 269 470 russianVoice;
+#X obj 350 470 russianVoice;
+#X obj 431 470 russianVoice;
+#X obj 511 470 russianVoice;
+#X obj 592 470 russianVoice;
+#X obj 321 8 loadbang;
+#X msg 321 28 1;
+#X msg 135 30 0;
+#X obj 28 597 *~;
+#X obj 28 386 pack f f f;
+#X obj 28 426 route 1 2 3 4 5 6 7 8, f 108;
+#X obj 28 360 poly 8 1, f 10;
+#X obj 84 599 hsl 128 15 0 1 0 0 empty empty Volume -2 -11 0 10 -262144
+-1 -1 12700 1;
+#X obj 28 672 pg_chorus;
+#X obj 288 256 hsl 37 15 0 1 0 0 empty empty chorus -2 -11 0 10 -262144
+-1 -1 1350 1;
+#X obj 288 287 s cdw;
+#X floatatom 751 203 5 0 90 0 - - -, f 5;
+#X floatatom 693 203 5 0 150 0 - - -, f 5;
+#X obj 751 0 loadbang;
+#X obj 693 0 loadbang;
+#X obj 492 323 seq;
+#X msg 573 279 stop;
+#X msg 579 300 pause;
+#X msg 584 321 continue;
+#X msg 558 235 read prelude.mid;
+#X obj 485 352 midiparse;
+#X obj 467 380 unpack f f;
+#X obj 453 253 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 693 227 s cut;
+#X obj 751 227 s reso;
+#X obj 28 634 lp_vcf;
+#X msg 693 25 150;
+#X msg 751 25 0;
+#X obj 693 62 vsl 15 128 0 150 0 0 empty empty cutoff 0 -9 0 10 -262144
+-1 -1 8700 1;
+#X obj 751 62 vsl 15 128 0 90 0 0 empty empty resonance 0 -9 0 10 -262144
+-1 -1 3100 1;
+#X text 796 196 BE VERY VERY VERY CAREFUL USING HIGH RESONANCE VALUES!!!
+(>100) NUMBER OBJECT IS LIMITED TO 90 JUST IN CASE, f 63;
+#X msg 568 255 read arab.mid;
 #X connect 0 0 1 0;
 #X connect 1 0 21 0;
 #X connect 2 0 3 0;
@@ -91,7 +116,7 @@
 #X connect 35 0 8 0;
 #X connect 35 0 16 0;
 #X connect 35 0 17 0;
-#X connect 36 0 41 0;
+#X connect 36 0 58 0;
 #X connect 37 0 38 0;
 #X connect 38 0 15 0;
 #X connect 38 1 26 0;
@@ -109,3 +134,23 @@
 #X connect 41 0 10 1;
 #X connect 41 0 14 0;
 #X connect 42 0 43 0;
+#X connect 44 0 57 0;
+#X connect 45 0 56 0;
+#X connect 46 0 60 0;
+#X connect 47 0 59 0;
+#X connect 48 0 53 0;
+#X connect 49 0 48 0;
+#X connect 50 0 48 0;
+#X connect 51 0 48 0;
+#X connect 52 0 48 0;
+#X connect 53 0 54 0;
+#X connect 54 0 39 0;
+#X connect 54 1 39 1;
+#X connect 55 0 48 0;
+#X connect 58 0 41 0;
+#X connect 59 0 61 0;
+#X connect 60 0 62 0;
+#X connect 61 0 45 0;
+#X connect 62 0 44 0;
+#X connect 64 0 48 0;
+#X coords 0 0 1 1 543 290 0;
