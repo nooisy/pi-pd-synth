@@ -1,4 +1,4 @@
-#N canvas 320 393 1888 554 10;
+#N canvas 32 393 1888 554 10;
 #X obj 21 205 russianOsc;
 #X obj 35 36 inlet;
 #X obj 21 406 outlet~;
@@ -14,8 +14,7 @@
 #X obj 74 273 sel 0;
 #X obj 21 381 *~, f 4;
 #X obj 35 58 unpack f f, f 48;
-#X obj 21 237 *~ 0.25;
-#X connect 0 0 15 0;
+#X connect 0 0 11 0;
 #X connect 1 0 14 0;
 #X connect 3 0 0 1;
 #X connect 4 0 0 0;
@@ -31,4 +30,3 @@
 #X connect 14 0 3 0;
 #X connect 14 1 10 0;
 #X connect 14 1 12 0;
-#X connect 15 0 11 0;

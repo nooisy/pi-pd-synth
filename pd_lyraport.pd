@@ -1,4 +1,4 @@
-#N canvas -8 -8 1904 996 10;
+#N canvas -7 0 942 987 10;
 #X obj 28 105 vsl 15 128 0 1 0 0 empty empty sharp -7 -9 0 10 -262144
 -1 -1 0 1;
 #X floatatom 28 260 5 0 0 0 - - -, f 5;
@@ -14,15 +14,15 @@
 #X obj 238 105 vsl 15 128 0 0.99 0 0 empty empty pw 0 -9 0 10 -262144
 -1 -1 0 1;
 #X floatatom 238 260 5 0 0 0 - - -, f 5;
-#X obj 28 755 dac~;
-#X obj 84 711 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 28 800 dac~;
+#X obj 84 746 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array osc 100 float 0 black #000000;
 #X coords 0 1 99 -1 250 150 1;
 #X restore 381 60 graph;
-#X obj 84 735 metro 100;
-#X obj 60 755 tabwrite~ osc;
+#X obj 84 780 metro 100;
+#X obj 60 800 tabwrite~ osc;
 #X obj 28 475 russianVoice;
 #X obj 276 73 vsl 15 128 0 1000 0 0 a empty a 0 -9 0 10 -262144 -1
 -1 0 1;
@@ -54,7 +54,7 @@
 #X obj 28 365 poly 8 1, f 10;
 #X obj 84 604 hsl 128 15 0 1 0 0 empty empty Volume -2 -11 0 10 -262144
 -1 -1 0 1;
-#X obj 28 677 pg_chorus;
+#X obj 28 644 pg_chorus;
 #X obj 288 261 hsl 37 15 0 1 0 0 empty empty chorus -2 -11 0 10 -262144
 -1 -1 0 1;
 #X obj 288 292 s cdw;
@@ -73,18 +73,25 @@
 -1 -1;
 #X obj 693 232 s cut;
 #X obj 751 232 s reso;
-#X obj 28 639 lp_vcf;
+#X obj 28 623 lp_vcf;
 #X msg 693 30 150;
 #X msg 751 30 0;
 #X obj 693 67 vsl 15 128 0 150 0 0 empty empty cutoff 0 -9 0 10 -262144
 -1 -1 12700 1;
 #X obj 751 67 vsl 15 128 0 90 0 0 empty empty resonance 0 -9 0 10 -262144
 -1 -1 0 1;
-#X text 796 201 BE VERY VERY VERY CAREFUL USING HIGH RESONANCE VALUES!!!
-(>100) NUMBER OBJECT IS LIMITED TO 90 JUST IN CASE, f 63;
 #X msg 568 260 read arab.mid;
-#X text 17 783 for using scarlet audio interfaces on linux see: https://www.raspberrypi.org/forums/viewtopic.php?p=971928
+#X text 17 828 for using scarlet audio interfaces on linux see: https://www.raspberrypi.org/forums/viewtopic.php?p=971928
 ;
+#X text 796 226 when using higher oversampling (see lp_vcf) \, the
+point of resonance self oscillation will be higher as well;
+#X text 796 199 BE VERY VERY VERY CAREFUL WHEN USING HIGH RESONANCE
+VALUES!!!  NUMBER OBJECT IS LIMITED JUST IN CASE, f 63;
+#X obj 66 689 limiter~;
+#X obj 28 689 z~ 64;
+#X obj 28 735 *~;
+#X msg 411 332 60 100;
+#X obj 28 665 hip~ 1;
 #X connect 0 0 1 0;
 #X connect 1 0 21 0;
 #X connect 2 0 3 0;
@@ -133,9 +140,7 @@
 #X connect 39 1 37 1;
 #X connect 39 2 37 2;
 #X connect 40 0 36 1;
-#X connect 41 0 10 0;
-#X connect 41 0 10 1;
-#X connect 41 0 14 0;
+#X connect 41 0 71 0;
 #X connect 42 0 43 0;
 #X connect 44 0 57 0;
 #X connect 45 0 56 0;
@@ -155,5 +160,13 @@
 #X connect 60 0 62 0;
 #X connect 61 0 45 0;
 #X connect 62 0 44 0;
-#X connect 64 0 48 0;
+#X connect 63 0 48 0;
+#X connect 67 0 69 1;
+#X connect 68 0 69 0;
+#X connect 69 0 10 0;
+#X connect 69 0 14 0;
+#X connect 69 0 10 1;
+#X connect 70 0 54 0;
+#X connect 71 0 68 0;
+#X connect 71 0 67 0;
 #X coords 0 0 1 1 543 290 0;

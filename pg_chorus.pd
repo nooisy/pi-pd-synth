@@ -1,4 +1,4 @@
-#N canvas 1075 321 970 557 10;
+#N canvas 604 340 970 557 10;
 #X obj 578 423 delwrite~ \$0-delay 1000;
 #X obj 169 108 osc~ 0.05;
 #X obj 169 133 *~ 10;
@@ -33,7 +33,7 @@
 ;
 #X obj 473 463 outlet~;
 #X obj 311 348 r cdw;
-#N canvas -1064 486 829 587 drywet 0;
+#N canvas 0 486 829 587 drywet 0;
 #X obj 149 292 *~;
 #X obj 274 307 *~;
 #X obj 257 119 inlet~;
@@ -59,7 +59,7 @@
 #X connect 10 0 4 0;
 #X connect 10 0 7 0;
 #X restore 339 394 pd drywet;
-#X obj 389 317 /~ 4;
+#X obj 389 317 /~ 8;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
 #X connect 3 0 5 0;
