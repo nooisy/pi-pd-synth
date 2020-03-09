@@ -1,4 +1,4 @@
-#N canvas -7 0 942 987 10;
+#N canvas 0 0 1888 980 10;
 #X obj 28 105 vsl 15 128 0 1 0 0 empty empty sharp -7 -9 0 10 -262144
 -1 -1 0 1;
 #X floatatom 28 260 5 0 0 0 - - -, f 5;
@@ -15,7 +15,7 @@
 -1 -1 0 1;
 #X floatatom 238 260 5 0 0 0 - - -, f 5;
 #X obj 28 800 dac~;
-#X obj 84 746 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 84 747 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array osc 100 float 0 black #000000;
@@ -81,17 +81,20 @@
 #X obj 751 67 vsl 15 128 0 90 0 0 empty empty resonance 0 -9 0 10 -262144
 -1 -1 0 1;
 #X msg 568 260 read arab.mid;
-#X text 17 828 for using scarlet audio interfaces on linux see: https://www.raspberrypi.org/forums/viewtopic.php?p=971928
-;
 #X text 796 226 when using higher oversampling (see lp_vcf) \, the
 point of resonance self oscillation will be higher as well;
 #X text 796 199 BE VERY VERY VERY CAREFUL WHEN USING HIGH RESONANCE
 VALUES!!!  NUMBER OBJECT IS LIMITED JUST IN CASE, f 63;
-#X obj 66 689 limiter~;
-#X obj 28 689 z~ 64;
+#X obj 66 700 limiter~;
+#X obj 28 700 z~ 64;
 #X obj 28 735 *~;
 #X msg 411 332 60 100;
 #X obj 28 665 hip~ 1;
+#X obj 84 726 loadbang;
+#X msg 375 332 60 0;
+#X obj 375 310 Uzi 8;
+#X obj 375 291 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 1 0;
 #X connect 1 0 21 0;
 #X connect 2 0 3 0;
@@ -140,7 +143,7 @@ VALUES!!!  NUMBER OBJECT IS LIMITED JUST IN CASE, f 63;
 #X connect 39 1 37 1;
 #X connect 39 2 37 2;
 #X connect 40 0 36 1;
-#X connect 41 0 71 0;
+#X connect 41 0 70 0;
 #X connect 42 0 43 0;
 #X connect 44 0 57 0;
 #X connect 45 0 56 0;
@@ -161,12 +164,16 @@ VALUES!!!  NUMBER OBJECT IS LIMITED JUST IN CASE, f 63;
 #X connect 61 0 45 0;
 #X connect 62 0 44 0;
 #X connect 63 0 48 0;
-#X connect 67 0 69 1;
-#X connect 68 0 69 0;
-#X connect 69 0 10 0;
-#X connect 69 0 14 0;
-#X connect 69 0 10 1;
-#X connect 70 0 54 0;
-#X connect 71 0 68 0;
-#X connect 71 0 67 0;
+#X connect 66 0 68 1;
+#X connect 67 0 68 0;
+#X connect 68 0 10 0;
+#X connect 68 0 14 0;
+#X connect 68 0 10 1;
+#X connect 69 0 54 0;
+#X connect 70 0 67 0;
+#X connect 70 0 66 0;
+#X connect 71 0 11 0;
+#X connect 72 0 54 0;
+#X connect 73 0 72 0;
+#X connect 74 0 73 0;
 #X coords 0 0 1 1 543 290 0;

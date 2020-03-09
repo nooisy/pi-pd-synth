@@ -29,8 +29,6 @@
 #X obj 579 186 vd~ \$0-delay;
 #X obj 669 186 vd~ \$0-delay;
 #X obj 578 271 inlet~;
-#X text 21 496 chorus by Piere Guillot https://forum.pdpatchrepo.info/user/pierre-guillot
-;
 #X obj 473 463 outlet~;
 #X obj 311 348 r cdw;
 #N canvas 0 486 829 587 drywet 0;
@@ -60,6 +58,9 @@
 #X connect 10 0 7 0;
 #X restore 339 394 pd drywet;
 #X obj 389 317 /~ 8;
+#X text 21 496 chorus by Piere Guillot https://forum.pdpatchrepo.info/user/pierre-guillot
+https://forum.pdpatchrepo.info/uploads/files/1459509331705-8_chorus.pd
+, f 70;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
 #X connect 3 0 5 0;
@@ -81,15 +82,15 @@
 #X connect 19 0 28 0;
 #X connect 20 0 19 0;
 #X connect 21 0 16 0;
-#X connect 22 0 34 0;
-#X connect 23 0 34 0;
-#X connect 24 0 34 0;
-#X connect 25 0 34 0;
-#X connect 26 0 34 0;
-#X connect 27 0 34 0;
-#X connect 28 0 34 0;
+#X connect 22 0 33 0;
+#X connect 23 0 33 0;
+#X connect 24 0 33 0;
+#X connect 25 0 33 0;
+#X connect 26 0 33 0;
+#X connect 27 0 33 0;
+#X connect 28 0 33 0;
 #X connect 29 0 0 0;
-#X connect 29 0 33 2;
-#X connect 32 0 33 0;
-#X connect 33 0 31 0;
-#X connect 34 0 33 1;
+#X connect 29 0 32 2;
+#X connect 31 0 32 0;
+#X connect 32 0 30 0;
+#X connect 33 0 32 1;
