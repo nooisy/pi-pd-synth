@@ -2,6 +2,8 @@
 A uni project: the movie: the game: the sequel.
 
 - [Things you'll need](#things-youll-need)
+- [Installation guide](#installation-guide)
+  - [Raspberry Pi](#step-1-raspberry-pi)
 
 # Things you'll need
 - Raspberry Pi (we used the fourth iteration of the microprocessing unit commonly known as the Raspberry Pi)
