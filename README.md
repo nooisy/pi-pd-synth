@@ -8,7 +8,7 @@ A uni project: the movie: the game: the sequel.
   
 # Things you'll need
 - Raspberry Pi (we used the fourth iteration of the microprocessing unit commonly known as the Raspberry Pi)
-- adapter to power your Pi, preferably one that connect to your pi
+- adapter to power your Pi
 - micro SD card, at least 8gb
 - ethernet cable
 - usb to ethernet adapter
