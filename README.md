@@ -7,7 +7,7 @@ A uni project: the movie: the game: the sequel.
   - [Making a connection](#step-2-making-a-connection)
   - [Entering the Pi-trix](#step-3-entering-the-pi-trix)
   - [Changing the rules](#step-4-changing-the-rules)
-  - [Having a close look](#step-5-having-a-close-look)
+  - [Gorgeous view ahead](#step-5-gorgeous-view-ahead)
   - [Pure Data](#step-6-pure-data)
   
 # Things you'll need
@@ -42,7 +42,7 @@ The default password is `raspberry`. You won't see letters or * appearing when t
 #### Step 4: Changing the rules
 RASPI CONFIG
 
-#### Step 5: Having a close look
+#### Step 5: Gorgeous view ahead
 VNC VIEWER
 
 #### Step 6: Pure Data
