@@ -7,6 +7,8 @@ A uni project: the movie: the game: the sequel.
   - [Making a connection](#step-2-making-a-connection)
   - [Entering the Pi-trix](#step-3-entering-the-pi-trix)
   - [Changing the rules](#step-4-changing-the-rules)
+  - [Having a close look](#step-5-having-a-close-look)
+  - [Pure Data](#step-6-pure-data)
   
 # Things you'll need
 - Raspberry Pi (we used the fourth iteration of the microprocessing unit commonly known as the Raspberry Pi)
@@ -38,13 +40,12 @@ The default password is `raspberry`. You won't see letters or * appearing when t
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/pitrix.png)
 
 #### Step 4: Changing the rules
-
-
-blablablalblabal SSH
 RASPI CONFIG
+
+#### Step 5: Having a close look
 VNC VIEWER
 
-#### Step ?: Pure Data
+#### Step 6: Pure Data
 For installing Pure Data on a Raspberry Pi, [click here](https://github.com/jonwwilkes/purr-data#build-guide)
 
 CONFIGURING MIDI ALSA AND STUFF 
