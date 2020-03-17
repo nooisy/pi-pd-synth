@@ -22,7 +22,7 @@ A uni project: the movie: the game: the sequel.
 Download a Raspbian image from the [Raspberry Pi site](https://www.raspberrypi.org/downloads/raspbian/). We recommend Raspbian Buster with desktop. Write your downloaded image to your SD card. On Windows you can use [Rufus](https://rufus.ie/). To enable SSH you'll need to a make an empty file called `ssh` (without an extension!) and place it in the root of your SD card. That's it, really.
 
 #### Step 2: Making a connection
-Now it's time to grab your ethernet cable and usb to ethernet adapter. Connect the ethernet cable to your adapter and Pi. Connect the usb to your already working computer. To allow your Raspberry Pi to connect to the internet, you'll need to share your already working computer's internet connection with your Pi. On Windows you'll need to change your adapter properties:
+Now it's time to grab your ethernet cable and usb to ethernet adapter. Connect the ethernet cable to your adapter and Pi. Connect the usb to your already working computer. To allow your Raspberry Pi to connect to the internet, you'll need to share your already working computer's internet connection with your Pi. On Windows you'll need to change your adapter properties like this:
 
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/share.png)
 
