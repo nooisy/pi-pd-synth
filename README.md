@@ -39,7 +39,9 @@ ssh pi@raspberrypi.local
 ```
 The default password is `raspberry`. You won't see letters or * appearing when typing your password - don't worry, your keyboard is still working! You'll probably get a prompt yabbering about so-called [ECDSA fingerprints](https://en.wikipedia.org/wiki/Public-key_cryptography). To shut it up, answer with a confident `yes`. If all went well you'll now be logged into your Pi!
 
-![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/pitrix.png)
+<p align="center">
+  <img src="https://github.com/nooisy/pi-pd-synth/blob/master/img/pitrix.png" alt="haha">
+</p>
 
 #### Step 4: Changing the rules
 Let's make our stay a more comfy one by configuring some options. It's handy to maximize your terminal window for the coming steps. We're going to run a program requiring special security privileges. That means that we need to prepend our command with the `sudo` ([superuser do](https://en.wikipedia.org/wiki/Sudo)) command:
