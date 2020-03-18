@@ -74,7 +74,7 @@ Installing Pure Data is easy as Pi:
 ```
 sudo apt-get install pd
 ```
-If you want a more up-to-date version of Pure Data, we can recommend [Purr Data](https://github.com/agraef/purr-data/wiki/Installation#raspbian) (which is also slightly less easy to install).
+If you want a more up-to-date and extensive version of Pure Data, we can recommend [Purr Data](https://github.com/agraef/purr-data/wiki/Installation#raspbian) (which is also slightly less easy to install).
 
 #### Step 7: Midi and Audio
 CONFIGURING MIDI ALSA AND STUFF 
