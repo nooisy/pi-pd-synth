@@ -48,9 +48,22 @@ You'll be greeted by a big menu:
 
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/bigmenu.png)
 
+You can navigate through the menu with the arrow keys. Select option 5 and enable `P3 VNC`. You could also consider other options like changing your password and locale, or enabling Wi-Fi. This is not in the scope of this manual though, so let us move on!
 
 #### Step 5: Gorgeous VNC Viewer ahead
-VNC VIEWER
+First things first, [download](https://www.realvnc.com/en/connect/download/viewer/) and install VNC Viewer on your already working computer. 
+
+If you were wondering how the last step made our stay more comfy: fret not, you'll find out right now. Escape the big menu and return to the regular terminal environment. To start VNC Viewer, simply type `vncserver`. Your terminal will spit out a bunch of text, we only need the last bit:
+```
+New desktop is raspberrypi:1 (169.254.3.42:1)
+```
+Your desktop probably has a different name and IP-address, that's completely normal. Open up VNC Viewer and let's connect to your Pi.
+
+![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/vnc.png)
+
+Login with your username and password. Now you can comfyily navigate your Pi!
+
+![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/desktop.png)
 
 #### Step 6: Pure Data
 For installing Pure Data on a Raspberry Pi, [click here](https://github.com/jonwwilkes/purr-data#build-guide)
