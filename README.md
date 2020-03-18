@@ -9,7 +9,7 @@ A uni project: the movie: the game: the sequel.
   - [Changing the rules](#step-4-changing-the-rules)
   - [Gorgeous VNC Viewer ahead](#step-5-gorgeous-vnc-viewer-ahead)
   - [Pure Data](#step-6-pure-data)
-  - [Midi](#step-7-midi)
+  - [Midi and Audio](#step-7-midi-and-audio)
   - [Synth-time](#step-8-synth-time)
   
 # Things you'll need
@@ -37,7 +37,7 @@ Open up your favorite terminal. You can use PowerShell if you're on Windows (per
 ```
 ssh pi@raspberrypi.local
 ```
-The default password is `raspberry`. You won't see letters or * appearing when typing your password - don't worry, your keyboard is still working! You'll probably get a prompt yabbering about so-called ECDSA fingerprints. To shut it up, answer with a confident `yes`. If all went well you'll now be logged into your Pi!
+The default password is `raspberry`. You won't see letters or * appearing when typing your password - don't worry, your keyboard is still working! You'll probably get a prompt yabbering about so-called [ECDSA fingerprints](https://en.wikipedia.org/wiki/Public-key_cryptography). To shut it up, answer with a confident `yes`. If all went well you'll now be logged into your Pi!
 
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/pitrix.png)
 
@@ -74,7 +74,7 @@ sudo apt-get install pd
 ```
 If you want a more up-to-date version of Pure Data, we can recommend [Purr Data](https://github.com/agraef/purr-data/wiki/Installation#raspbian) (which is also slightly less easy to install).
 
-#### Step 7: Midi & Audio
+#### Step 7: Midi and Audio
 CONFIGURING MIDI ALSA AND STUFF 
 CONFIGURING AUDIO
 
