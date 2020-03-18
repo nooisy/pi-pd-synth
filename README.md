@@ -7,7 +7,7 @@ A uni project: the movie: the game: the sequel.
   - [Making a connection](#step-2-making-a-connection)
   - [Entering the Pi-trix](#step-3-entering-the-pi-trix)
   - [Changing the rules](#step-4-changing-the-rules)
-  - [Gorgeous view ahead](#step-5-gorgeous-view-ahead)
+  - [Gorgeous VNC Viewer ahead](#step-5-gorgeous-vnc-viewer-ahead)
   - [Pure Data](#step-6-pure-data)
   
 # Things you'll need
@@ -40,9 +40,16 @@ The default password is `raspberry`. You won't see letters or * appearing when t
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/pitrix.png)
 
 #### Step 4: Changing the rules
-RASPI CONFIG
+Let's make our stay a more comfy one by configuring some options. It's handy to maximize your terminal window for the coming steps. We're going to run a program requiring special security privileges. That means that we need to prepend our command with the `sudo` ([superuser do](https://en.wikipedia.org/wiki/Sudo)) command:
+```
+sudo raspi-config
+```
+You'll be greeted by a big menu:
 
-#### Step 5: Gorgeous view ahead
+![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/bigmenu.png)
+
+
+#### Step 5: Gorgeous VNC Viewer ahead
 VNC VIEWER
 
 #### Step 6: Pure Data
