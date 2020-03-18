@@ -9,6 +9,8 @@ A uni project: the movie: the game: the sequel.
   - [Changing the rules](#step-4-changing-the-rules)
   - [Gorgeous VNC Viewer ahead](#step-5-gorgeous-vnc-viewer-ahead)
   - [Pure Data](#step-6-pure-data)
+  - [Midi](#step-7-midi)
+  - [Synth-time](#step-8-synth-time)
   
 # Things you'll need
 - Raspberry Pi (we used the fourth iteration of the microprocessing unit commonly known as the Raspberry Pi)
@@ -66,9 +68,16 @@ Login with your username and password. Now you can comfyily navigate your Pi!
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/desktop.png)
 
 #### Step 6: Pure Data
-For installing Pure Data on a Raspberry Pi, [click here](https://github.com/jonwwilkes/purr-data#build-guide)
+Installing Pure Data is easy as Pi:
+```
+sudo apt-get install pd
+```
+If you want a more up-to-date version of Pure Data, we can recommend [Purr Data](https://github.com/agraef/purr-data/wiki/Installation#raspbian) (which is also slightly less easy to install).
 
+#### Step 7: Midi & Audio
 CONFIGURING MIDI ALSA AND STUFF 
 CONFIGURING AUDIO
+
+#### Step 8: Synth-time
 DOWNLOAD PATCHES GIT CLONE THIS REPO
 START JAMMING
