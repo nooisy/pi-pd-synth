@@ -59,7 +59,7 @@ First things first, [download](https://www.realvnc.com/en/connect/download/viewe
 
 If you were wondering how the last step made our stay more comfy: fret not, you'll find out right now. Escape the big menu and return to the regular terminal environment. To start VNC Viewer, simply type `vncserver` (on a Pi 4 you might run into some resolution problems, `vncserver-virtual -randr=1920x1080` may solve that). Your terminal will spit out a bunch of text, but we only need the last bit:
 ```
-New desktop is raspberrypi:1 (169.254.3.42:1)
+New desktop is raspberrypi:1 (*IP-address:port*)
 ```
 Your desktop might have a different name. Make sure to use that one and not the one above. Open up VNC Viewer and let's connect to your Pi.
 
