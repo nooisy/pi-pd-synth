@@ -11,6 +11,8 @@ A uni project: the movie: the game: the sequel.
   - [Pure Data](#step-6-pure-data)
   - [Midi and Audio](#step-7-midi-and-audio)
   - [Synth-time](#step-8-synth-time)
+- [Obstacles](#obstacles)
+- [Sources and other cool links](#sources-and-other-cool-links)
   
 # Things you'll need
 - Raspberry Pi (we used the fourth iteration of the microprocessing unit commonly known as the Raspberry Pi)
@@ -107,3 +109,24 @@ git clone https://github.com/nooisy/pi-pd-synth.git
 Open the `main.pd` patch and start having fun!
 
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/pdend.png)
+
+# Obstacles
+Raspberry updated the HDMI display graphics connection stuff for the Pi 4 (`vc4-fkms-v3d`) which resulted in cool stuff (4k @ 60hz), but it also made using different resolutions on a headless Pi a bit of a hassle. Forums talk about editing [boot options](https://www.raspberrypi.org/documentation/configuration/config-txt/) which, sadly, didn't do much for us. The `xrandr` [utility](https://xorg-team.pages.debian.net/xorg/howto/use-xrandr.html) that usually takes care of the outputs for a screen also behaved in a different-than-normal way (missing modes, not accepting new modes). In the end, specifying the size of the VNC virtual desktop like this `vncserver-virtual -randr=1920x1080` made it work.
+
+Coming from Max/MSP, Pure Data took getting used to. Lots of objects behave just a bit differently. Especially the way buffers work. No suchs objects like <b>[buffer~]</b> or <b>[groove~]</b> in PD. To write to main memory in PD you have to use array objects. Johannes Kreidler's [PD book/site](http://www.pd-tutorial.com/english/ch03s04.html) really helped with understanding that process. Trying to manipulate the arrays gave us more on insight on the workings of samples, sample rates, phase, phasors, Hanning windows, delay lines, etc. 
+
+PD's helpfiles are lackluster in comparison to the Max ones. The excellent community on the PD Patch Repo Forums luckily have great explanations and often share their patches with illustrative examples.
+
+# Sources and other cool links
+#### Raspberry stuff
+https://www.raspberrypi.org/forums/
+
+#### Pure Data stuff
+https://puredata.info/docs/manuals/pdrefcards/pd-refcard-en.pdf<br>
+http://www.pd-tutorial.com/english/index.html<br>
+http://write.flossmanuals.net/pure-data/introduction2/<br>
+https://www.youtube.com/playlist?list=PL12DC9A161D8DC5DC<br>
+https://www.youtube.com/playlist?list=PLqJgTfn3kSMW3AAAl2liJRKd-7DhZwLlq<br>
+https://www.youtube.com/playlist?list=PL0dqIhYnzlnPeQAC5mRzKq5HLwfBGRYaO<br>
+https://forum.pdpatchrepo.info/<br>
+https://patchstorage.com/
