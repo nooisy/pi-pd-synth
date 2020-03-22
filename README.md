@@ -57,11 +57,11 @@ You can navigate through the menu with the arrow keys. Select option 5 and enabl
 #### Step 5: Gorgeous VNC Viewer ahead
 First things first, [download](https://www.realvnc.com/en/connect/download/viewer/) and install VNC Viewer on your already working computer. 
 
-If you were wondering how the last step made our stay more comfy: fret not, you'll find out right now. Escape the big menu and return to the regular terminal environment. To start VNC Viewer, simply type `vncserver`. Your terminal will spit out a bunch of text, we only need the last bit:
+If you were wondering how the last step made our stay more comfy: fret not, you'll find out right now. Escape the big menu and return to the regular terminal environment. To start VNC Viewer, simply type `vncserver` (on a Pi 4 you might run into some resolution problems, `vncserver-virtual -randr=1920x1080` may solve that). Your terminal will spit out a bunch of text, but we only need the last bit:
 ```
 New desktop is raspberrypi:1 (169.254.3.42:1)
 ```
-Your desktop probably has a different name and IP-address, that's completely normal. Open up VNC Viewer and let's connect to your Pi.
+Your desktop might have a different name. Make sure to use that one and not the one above. Open up VNC Viewer and let's connect to your Pi.
 
 ![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/vnc.png)
 
@@ -77,9 +77,31 @@ sudo apt-get install pd
 If you want a more up-to-date and extensive version of Pure Data, we can recommend [Purr Data](https://github.com/agraef/purr-data/wiki/Installation#raspbian) (which is also slightly less easy to install).
 
 #### Step 7: Midi and Audio
-CONFIGURING MIDI ALSA AND STUFF 
-CONFIGURING AUDIO
+To configure midi we need to use a program called `aconnectgui`. You might not have it installed, so just in case:
+```
+sudo apt-get install aconnectgui
+```
+You can plug-in your midikeyboard now and start Pure Data. Open the preferences window (Ctrl + P) to select your audio interface as I/O and make sure that you're using the ALSA audio api.
+
+<p align="center">
+  <img src="https://github.com/nooisy/pi-pd-synth/blob/master/img/pdaudio.png" alt="haha">
+</p>
+
+Hop over to the MIDI tab, set the midi api to the ALSA one and both ports to channel 1.
+
+<p align="center">
+  <img src="https://github.com/nooisy/pi-pd-synth/blob/master/img/pdmidi.png" alt="haha">
+</p>
+
+To make use of these channels we need to run `aconnectgui` to connect them to your midikeyboard. You can do this by clicking on the cable-icon and drawing the right lines between the corresponding channels.
+
+<p align="center">
+  <img src="https://github.com/nooisy/pi-pd-synth/blob/master/img/alsa.png" alt="haha">
+</p>
 
 #### Step 8: Synth-time
-DOWNLOAD PATCHES GIT CLONE THIS REPO
-START JAMMING
+Almost there! Download this repository using `git`:
+```
+git clone https://github.com/nooisy/pi-pd-synth.git
+```
+Open the `main.pd` patch and start having fun!
