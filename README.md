@@ -105,3 +105,5 @@ Almost there! Download this repository using `git`:
 git clone https://github.com/nooisy/pi-pd-synth.git
 ```
 Open the `main.pd` patch and start having fun!
+
+![haha](https://github.com/nooisy/pi-pd-synth/blob/master/img/pdend.png)
