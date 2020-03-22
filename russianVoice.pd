@@ -1,4 +1,4 @@
-#N canvas 32 393 1888 554 10;
+#N canvas 467 600 1888 554 10;
 #X obj 21 205 russianOsc;
 #X obj 35 36 inlet;
 #X obj 21 406 outlet~;
@@ -8,11 +8,11 @@
 #X obj 101 125 r trem;
 #X obj 144 125 r duty;
 #X obj 187 125 r pw;
-#X obj 42 345 / 127;
+#X obj 84 345 / 127;
 #X obj 42 273 adsr;
 #X obj 21 308 *~, f 4;
 #X obj 74 273 sel 0;
-#X obj 21 381 *~, f 4;
+#X obj 21 381 *~, f 11;
 #X obj 35 58 unpack f f, f 48;
 #X connect 0 0 11 0;
 #X connect 1 0 14 0;
