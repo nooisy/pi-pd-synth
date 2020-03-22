@@ -18,7 +18,7 @@ A uni project: the movie: the game: the sequel.
 - micro SD card, at least 8gb
 - ethernet cable
 - usb to ethernet adapter
-- audio interface (we used a Focusrite Scarlett 2i4)
+- audio interface (we used a Focusrite for the sampling part of the synth, other audio interfaces might cause inconveniences)
 - midi controller of some sort
 - a device – or more precisely: a transducer – that converts sound into an electrical signal (you might call it a microphone)
 - speakers
