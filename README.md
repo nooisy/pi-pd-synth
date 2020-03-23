@@ -115,7 +115,7 @@ Raspberry updated the HDMI display graphics connection stuff for the Pi 4 (`vc4-
 
 Coming from Max/MSP, Pure Data took getting used to. Lots of objects behave just a bit differently. Especially the way buffers work. No suchs objects like <b>[buffer~]</b> or <b>[groove~]</b> in PD. To write to main memory in PD you have to use array objects. Johannes Kreidler's [PD book/site](http://www.pd-tutorial.com/english/ch03s04.html) really helped with understanding that process. Trying to manipulate the arrays gave us more on insight on the workings of samples, sample rates, phase, phasors, Hanning windows, delay lines, etc. 
 
-PD's helpfiles are lackluster in comparison to the Max ones. The excellent community on the PD Patch Repo Forums luckily have great explanations and often share their patches with illustrative examples.
+PD's helpfiles are lackluster in comparison to the Max ones. The excellent community on the PD Patch Repo Forums luckily has great explanations and often share their patches with illustrative examples.
 
 # Sources and other cool links
 #### Raspberry stuff
