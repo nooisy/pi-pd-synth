@@ -1,6 +1,8 @@
 # pi-pd-synth
 A uni project: the movie: the game: the sequel.
 
+The goal of this project is to learn how the Raspberry Pi works in conjunction with Pure Data. We want to control a PD patch with live midi-input and ideally also have the ability to sample incoming audio.
+
 - [Things you'll need](#things-youll-need)
 - [Installation guide](#installation-guide)
   - [Baking Pi](#step-1-baking-pi)
