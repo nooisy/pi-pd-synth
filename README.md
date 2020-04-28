@@ -80,6 +80,9 @@ sudo apt-get install pd
 ```
 If you want a more up-to-date and extensive version of Pure Data, we can recommend [Purr Data](https://github.com/agraef/purr-data/wiki/Installation#raspbian) (which is also slightly less easy to install).
 
+#### NOTE:
+The included patches are made for use with Purr Data and won't work with vanilla pd.
+
 #### Step 7: Midi and Audio
 To configure midi we need to use a program called `aconnectgui`. You might not have it installed, so just in case:
 ```
